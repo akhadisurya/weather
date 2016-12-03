@@ -10,8 +10,11 @@ $(document).ready(function () {
       data: { q: requestData },
       dataType: 'json',
       success: function (data) {
-        resultElement.html('Weather: ' + data.weather[0].main + '<br/>' + 'Description: ' + data.weather[0].description);
-      }
+        if (data.message != null) {
+          resultElement.html(data.message);
+        } else {
+          resultElement.html('Weather: ' + data.weather[0].main + '<br/>' + 'Description: ' + data.weather[0].description);
+        }
     });
   });
 });
