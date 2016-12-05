@@ -15,6 +15,6 @@ $(document).ready(function () {
         } else {
           resultElement.html('Weather: ' + data.weather[0].main + '<br/>' + 'Description: ' + data.weather[0].description);
         }
-    });
+
   });
 });

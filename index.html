@@ -1,15 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-     <link rel="stylesheet" href="css/main.css">
+     <!-- <link rel="stylesheet" href="css/main.css"> -->
     <meta charset="UTF-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <title>The Weather Report</title>
   </head>
 
   <body>
+  <table>
+    <tr>
+      <td>City</td>
+      <td><input type='text' id='txtCity' /></td>
+    </tr>
+    <tr>
+      <td>Country</td>
+      <td><input type='text' id='txtCountry' /></td>
+    </tr>
+  </table>
 
+  <input type='button' id='btnGetWeather' value='Get Weather Data'>
+  <br /><br />
 
+  <div id='resultDiv'>
+  </div>
 
 
   <script src="js/script.js"></script>
