@@ -5,7 +5,7 @@ $(document).ready(function () {
 
 
     $.ajax({
-      url: 'http://api.openweathermap.org/data/2.5/weather',
+      url: 'http://api.openweathermap.org/data/2.5/weather?APPID=d3d30f5b27665490813d939ed9013fc0',
       method: 'get',
       data: { q: requestData },
       dataType: 'json',
