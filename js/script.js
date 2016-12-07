@@ -5,7 +5,7 @@ $(document).ready(function () {
 
 
     $.ajax({
-      url: 'http://api.openweathermap.org/data/2.5/weather?APPID=d3d30f5b27665490813d939ed9013fc0',
+      url: 'http://api.openweathermap.org/data/2.5/weather?&units=imperial&APPID=d3d30f5b27665490813d939ed9013fc0',
       method: 'get',
       data: { q: requestData },
       dataType: 'json',
@@ -13,7 +13,7 @@ $(document).ready(function () {
         if (data.message != null) {
           resultElement.html(data.message);
         } else {
-          resultElement.html('Weather: ' + data.weather[0].main + '<br/>' + 'Description: ' + data.weather[0].description + '<br/>' + 'Temperature: ' +  data.main.temp);
+          resultElement.html('Weather: ' + data.weather[0].main + '<br/>' + 'Description: ' + data.weather[0].description + '<br/>' + 'Temperature: ' +  data.main.temp + ' Celcius');
           console.log(data)
         }
       },
