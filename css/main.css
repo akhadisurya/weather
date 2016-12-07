@@ -1,0 +1,21 @@
+html {
+  background: url("http://cupboardsupply.co.za/wp-content/uploads/2015/02/weather-background.png");
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  background-attachment: fixed;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+
+h1 {
+  text-align: center;
+  color: #333333;
+  font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+}
