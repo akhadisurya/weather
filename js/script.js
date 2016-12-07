@@ -13,7 +13,7 @@ $(document).ready(function () {
         if (data.message != null) {
           resultElement.html(data.message);
         } else {
-          resultElement.html('Weather: ' + data.weather[0].main + '<br/>' + 'Description: ' + data.weather[0].description + '<br/>' + 'Temperature: ' +  data.main.temp + ' Celcius');
+          resultElement.html('Weather: ' + data.weather[0].main + '<br/>' + 'Description: ' + data.weather[0].description + '<br/>' + 'Temperature: ' +  data.main.temp + ' °F');
           console.log(data)
         }
       },
