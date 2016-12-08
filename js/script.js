@@ -1,5 +1,8 @@
+$('#resultDiv').hide()
+
 $(document).ready(function () {
   $('#btnGetWeather').click(function (){
+    $('#resultDiv').show()
     var requestData = $('#txtCity').val() + ',' + $('txtCountry').val();
     var resultElement = $('#resultDiv');
 
