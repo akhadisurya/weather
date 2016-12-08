@@ -16,10 +16,10 @@ $(document).ready(function () {
           resultElement.html('Weather: ' + data.weather[0].main + '<br/>' + 'Description: ' + data.weather[0].description + '<br/>' + 'Temperature: ' +  data.main.temp + ' °F');
           console.log(data)
         }
-      },
-      error: function (err){
-        alert(err);
       }
+      // error: function (err){
+      //   alert(err);
+
     });
   });
 });
