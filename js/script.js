@@ -17,7 +17,7 @@ $(document).ready(function () {
           resultElement.html(data.message);
         } else {
           resultElement.html('Weather: ' + data.weather[0].main + '<br/>' + 'Description: ' + data.weather[0].description + '<br/>' + 'Temperature: ' +  data.main.temp + ' °F');
-          console.log(data)
+          console.log(data.name)
         }
       }
       // error: function (err){
